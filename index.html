@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Ular Neon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="game-container">
+        <h1>Ular Neon</h1>
+
+        <div id="ui-panel">
+            <div id="instructions">
+                <h2>Cara Bermain:</h2>
+                <ul style="text-align: left;">
+                    <li style="text-align: center;"><strong>Pilih Level Untuk Memulai Game</strong> </li>
+                    <li style="text-align: center;">-------------------------------</li>
+                    <li><strong>Level 1:</strong> <br>Dinding bisa ditembus.</li>
+                    <br>
+                    <li><strong>Level 2:</strong> <br>Menabrak dinding akan mengakhiri permainan.</li>
+                    <br>
+                    <li><strong>Level 3:</strong> <br>Dinding mematikan & muncul rintangan acak!</li>
+                    <br>
+                </ul>
+                <p>Gunakan <strong>tombol panah</strong> di keyboard atau di layar.</p>
+            </div>
+            <div id="level-selection">
+                <p>Pilih Level:</p>
+                <button class="btn" onclick="startGame(1)">Level 1</button>
+                <button class="btn" onclick="startGame(2)">Level 2</button>
+                <button class="btn" onclick="startGame(3)">Level 3</button>
+            </div>
+            <div id="game-over-screen" class="hidden">
+                <h2>Game Over!</h2>
+                <p>Skor Anda: <span id="final-score">0</span></p>
+                <p>High Score: <span id="high-score-display">0</span></p>
+                <a href="#" onclick="location.reload();" class="btn back-btn">Pilih Level Lain</a>
+            </div>
+        </div>
+
+        <div id="game-board"></div>
+
+        <div id="game-info">
+            <span id="score">Skor: 0</span>
+            <span id="level-display">Level: -</span>
+            <button id="home-btn" class="btn hidden" onclick="location.reload();">Home</button>
+            <button id="pause-btn" class="btn hidden">Pause</button>
+        </div>
+
+        <div id="mobile-controls">
+            <button id="up-btn">↑</button>
+            <div>
+                <button id="left-btn">←</button>
+                <button id="right-btn">→</button>
+            </div>
+            <button id="down-btn">↓</button>
+        </div>
+    </div>
+
+    <audio id="eat-sound" src="sounds/eat.wav"></audio>
+    <audio id="lose-sound" src="sounds/lose.wav"></audio>
+    <audio id="click-sound" src="sounds/click.wav"></audio>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
