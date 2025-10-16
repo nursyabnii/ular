@@ -18,7 +18,7 @@ Ular Neon mengambil gameplay adiktif dari game ular orisinal dan memberinya sent
 # 📂 Struktur File
 Proyek ini diorganisir menjadi beberapa file untuk keterbacaan dan pemeliharaan yang lebih baik:
 
-``
+```
 /project-folder
 │
 ├── index.html         # Struktur utama dan layout halaman web
@@ -28,7 +28,7 @@ Proyek ini diorganisir menjadi beberapa file untuk keterbacaan dan pemeliharaan 
 ├── eat.mp3            # Suara saat ular makan
 ├── lose.mp3           # Suara saat game over
 └── click.mp3          # Suara saat memilih level
-``
+```
 
 # 🚀 Cara Menjalankan
 Anda tidak memerlukan server atau alat build apa pun untuk menjalankan game ini. Cukup ikuti langkah-langkah berikut:
